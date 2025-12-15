@@ -1,46 +1,88 @@
+/* ---- Base ---- */
 body {
-  font-family: Georgia, serif;
   margin: 0;
-  background: #f9f9f9;
-  color: #222;
+  font-family: Georgia, serif;
+  background-color: #fafafa;
+  color: #1a1a1a;
+  line-height: 1.8;
 }
 
+/* ---- Navbar ---- */
 nav {
-  background: #ffffff;
-  border-bottom: 1px solid #ddd;
-  padding: 15px 30px;
+  background: white;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 18px 40px;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 nav a {
-  margin-right: 20px;
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  margin-right: 25px;
+  font-size: 16px;
 }
 
 nav a:hover {
   color: #000;
+  border-bottom: 2px solid #000;
+  padding-bottom: 2px;
 }
 
+/* ---- Layout ---- */
 .container {
-  max-width: 750px;
+  max-width: 720px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
+/* ---- Headings ---- */
 h1 {
   font-family: "Times New Roman", serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: "Times New Roman", serif;
+  margin-top: 40px;
+}
+
+/* ---- Essay list ---- */
+.essay-list {
+  list-style: none;
+  padding: 0;
 }
 
 .essay-list li {
-  margin: 12px 0;
+  margin: 16px 0;
 }
 
+.essay-list a {
+  font-size: 18px;
+  color: #2a5db0;
+}
+
+.essay-list a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Footer ---- */
 .footer {
   text-align: center;
-  padding: 30px;
   font-size: 14px;
-  color: #666;
+  color: #777;
+  padding: 40px 0;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 600px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
 }
